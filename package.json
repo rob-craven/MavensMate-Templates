@@ -459,7 +459,12 @@
                     "name":"api_name",
                     "description":"Visualforce Page API Name",
                     "default":"MyVisualforcePageName"
-                }
+                },
+                {
+                    "name":"object_name",
+                    "description":"Object API Name",
+                    "default":"Account"
+                }                
             ]
         },
         {  
@@ -472,6 +477,11 @@
                     "name":"api_name",
                     "description":"Visualforce Page API Name",
                     "default":"MyVisualforcePageName"
+                },
+                {
+                    "name":"object_name",
+                    "description":"Object API Name",
+                    "default":"Account"
                 }
             ]
         },                
