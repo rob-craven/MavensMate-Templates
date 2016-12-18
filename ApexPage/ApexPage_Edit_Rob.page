@@ -1,10 +1,10 @@
 <apex:page standardcontroller="{{object_name}}" tabStyle="{{object_name}}">
-<apex:sectionHeader title="{!$ObjectType.Account.label} Edit" subtitle="{!IF(ISNULL(Account.Name), 'New {!$ObjectType.Account.label}', Account.Name)}" help="/help/doc/user_ed.jsp?loc=help" />
+<apex:sectionHeader title="{!$ObjectType.{{object_name}}.label} Edit" subtitle="{!IF(ISNULL({{object_name}}.Name), 'New {!$ObjectType.{{object_name}}label}', {{object_name}}.Name)}" help="/help/doc/user_ed.jsp?loc=help" />
 
 <apex:form>
 	<apex:pageMessages escape="true" id="errMsg"/>
 
-	<apex:pageBlock mode="edit" title="{!$ObjectType.Account.label} Edit">
+	<apex:pageBlock mode="edit" title="{!$ObjectType.{{object_name}}.label} Edit">
 
 		<apex:pageBlockButtons>
 			<apex:commandbutton value="Save" action="{!save}" />
@@ -12,7 +12,7 @@
 		</apex:pageBlockButtons>
 
 		<apex:pageBlockSection title="A Title" showheader="true" columns="2">
-			<apex:inputfield value="{!Account.Name}" required="true"/>
+			<apex:inputfield value="{!{{object_name}}.Name}" required="true"/>
 		</apex:pageBlockSection>
 
 	</apex:pageblock>
