@@ -465,7 +465,7 @@
         {  
             "name":"Visualforce Page View Rob",
             "file_name":"ApexPage_View_Rob.page",
-            "description":"Basic Visualforce View Page template",
+            "description":"Visualforce View Page template",
             "author":"@rob-craven",
             "params":[  
                 {  

@@ -1,4 +1,4 @@
-<apex:page standardcontroller="Account" tabStyle="Account" extensions="ctrl_case_ext">
+<apex:page standardcontroller="Account" tabStyle="Account">
 <apex:sectionHeader title="{!$ObjectType.Account.label}" subtitle="{!Account.Name}" help="/help/doc/user_ed.jsp?loc=help" />
 
 <apex:form>
