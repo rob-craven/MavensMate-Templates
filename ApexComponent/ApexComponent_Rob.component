@@ -1,0 +1,5 @@
+<apex:component controller="ctrl_class_name" access="global">
+    <apex:attribute name="recordId" assignTo="{!recId}" type="String" required="true" description="The 15 or 18 digit Id of the record" />
+
+
+</apex:component>

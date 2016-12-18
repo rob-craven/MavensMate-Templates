@@ -420,6 +420,19 @@
                     "default":"MyVisualforceComponent"
                 }
             ]
+        },
+        {  
+            "name":"Visualforce Component Rob",
+            "file_name":"ApexComponent_Rob.component",
+            "description":"Basic Visualforce Component template",
+            "author":"@rob-craven",
+            "params":[  
+                {  
+                    "name":"api_name",
+                    "description":"Visualforce Component API Name",
+                    "default":"myVisualforceComponent"
+                }
+            ]
         }
     ],
     "ApexPage":[  
