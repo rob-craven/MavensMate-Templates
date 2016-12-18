@@ -491,6 +491,22 @@
             ]
         },
         {  
+            "name":"Apex Trigger",
+            "file_name":"ApexTrigger_Rob.trigger",
+            "description":"Rob's keep it simple trigger template",
+            "author":"@rob-craven",
+            "params":[  
+                {  
+                    "name":"api_name",
+                    "description":"Apex Trigger API Name",
+                },
+                {  
+                    "name":"object_name",
+                    "description":"Object API Name",
+                }
+            ]
+        },        
+        {  
             "name":"Apex Trigger - All Events",
             "file_name":"ApexTriggerAllEvents.trigger",
             "description":"Apex Trigger with all Trigger events",
