@@ -66,6 +66,19 @@
             ]
         },
         {  
+            "name":"BDD Unit Test Rob",
+            "file_name":"BDDUnitTestApexClass_Rob.cls",
+            "description":"Behaviour Driven Development Unit test class",
+            "author":"@rob-craven",
+            "params":[  
+                {  
+                    "name":"api_name",
+                    "description":"Apex Class API Name",
+                    "default":"MyBDDClass"
+                }
+            ]
+        },        
+        {  
             "name":"Controller Extension",
             "file_name":"ControllerExtension.cls",
             "description":"Controller extension Apex Class",
