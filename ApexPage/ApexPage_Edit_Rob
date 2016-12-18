@@ -1,4 +1,5 @@
 <apex:page standardcontroller="Account" tabStyle="Account">
+<!--
 <apex:sectionHeader title="{!$ObjectType.Account.label} Edit" subtitle="{!IF(ISNULL(Account.Name), 'New {!$ObjectType.Account.label}', Account.Name)}" help="/help/doc/user_ed.jsp?loc=help" />
 
 <apex:form>
@@ -17,4 +18,5 @@
 
 	</apex:pageblock>
 </apex:form>
+-->
 </apex:page>
