@@ -1,22 +1,3 @@
 <apex:page standardcontroller="Account" tabStyle="Account">
-<!--
-<apex:sectionHeader title="{!$ObjectType.Account.label} Edit" subtitle="{!IF(ISNULL(Account.Name), 'New {!$ObjectType.Account.label}', Account.Name)}" help="/help/doc/user_ed.jsp?loc=help" />
 
-<apex:form>
-	<apex:pageMessages escape="true" id="errMsg"/>
-
-	<apex:pageblock mode="edit" title="{!$ObjectType.Account.label} Edit">
-
-		<apex:pageblockbuttons>
-			<apex:commandbutton value="Save" action="{!save}" />
-			<apex:commandbutton value="Cancel" action="{!cancel}" immediate="true" />			
-		</apex:pageblockbuttons>
-
-		<apex:pageblocksection title="A Title" showheader="true" columns="2">
-			<apex:inputfield value="{!Account.Name}" required="true"/>
-		</apex:pageblocksection>
-
-	</apex:pageblock>
-</apex:form>
--->
 </apex:page>
