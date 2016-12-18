@@ -1,21 +1,21 @@
-<apex:page standardcontroller="Account" tabStyle="Account">
-<apex:sectionHeader title="{!$ObjectType.Account.label}" subtitle="{!Account.Name}" help="/help/doc/user_ed.jsp?loc=help" />
+<apex:page standardcontroller="{{object_name}}" tabStyle="{{object_name}}">
+<apex:sectionHeader title="{!$ObjectType.{{object_name}}.label}" subtitle="{!{{object_name}}.Name}" help="/help/doc/user_ed.jsp?loc=help" />
 
 <apex:form>
 	<apex:pageMessages escape="true" id="errMsg"/>
 
-	<apex:pageBlock mode="maindetail" title="{!$ObjectType.Account.label}">
+	<apex:pageBlock mode="maindetail" title="{!$ObjectType.{{object_name}}.label}">
 		<apex:pageBlockButtons>
 			<apex:commandbutton value="Edit" action="{!edit}"/>			
 			<apex:commandbutton value="Delete" action="{!delete}" onclick="if(!confirm('Are you sure?')){return false};"/>
 		</apex:pageBlockButtons>
 
 		<apex:pageBlockSection title="A Title" showheader="false" collapsible="false" columns="2">
-			<apex:outputfield value="{!Account.Name}"/>
+			<apex:outputfield value="{!{{object_name}}.Name}"/>
 			<apex:pageBlockSectionItem >
 				<apex:outputlabel value="Owner"/>
 					<apex:outputpanel >
-					<apex:outputfield value="{!Account.OwnerId}"/>&nbsp;&nbsp;<apex:outputLink value="/{!Account.Id}/a?retURL=%2F{!Account.Id}">[Change]</apex:outputLink>
+					<apex:outputfield value="{!{{object_name}}.OwnerId}"/>&nbsp;&nbsp;<apex:outputLink value="/{!{{object_name}}.Id}/a?retURL=%2F{!{{object_name}}.Id}">[Change]</apex:outputLink>
 				</apex:outputpanel>
 			</apex:pageBlockSectionItem>			
 		</apex:pageBlockSection>
@@ -24,15 +24,15 @@
 	       <apex:pageBlockSectionItem>
 	            <apex:outputlabel value="Created By"/>
 	            <apex:outputPanel>
-	                <apex:outputLink value="/{!Account.CreatedBy.Id}"> {!Account.CreatedBy.Name}</apex:outputLink>,&nbsp;
-	                <apex:outputField value="{!Account.CreatedDate}" />
+	                <apex:outputLink value="/{!{{object_name}}.CreatedBy.Id}"> {!{{object_name}}.CreatedBy.Name}</apex:outputLink>,&nbsp;
+	                <apex:outputField value="{!{{object_name}}.CreatedDate}" />
 	            </apex:outputPanel>
 	        </apex:pageBlockSectionItem>
 	        <apex:pageBlockSectionItem>
 	            <apex:outputlabel value="Last Modified By"/>
 	            <apex:outputPanel>
-	                <apex:outputLink value="/{!Account.LastModifiedBy.Id}"> {!Account.LastModifiedBy.Name}</apex:outputLink>,&nbsp;
-	                <apex:outputField value="{!Account.LastModifiedDate}" />
+	                <apex:outputLink value="/{!{{object_name}}.LastModifiedBy.Id}"> {!A{{object_name}}.LastModifiedBy.Name}</apex:outputLink>,&nbsp;
+	                <apex:outputField value="{!{{object_name}}.LastModifiedDate}" />
 	            </apex:outputPanel>
 	        </apex:pageBlockSectionItem>			
 		</apex:pageBlockSection>
