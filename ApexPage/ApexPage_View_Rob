@@ -1,0 +1,41 @@
+<apex:page standardcontroller="Account" tabStyle="Account" extensions="ctrl_case_ext">
+<apex:sectionHeader title="{!$ObjectType.Account.label}" subtitle="{!Account.Name}" help="/help/doc/user_ed.jsp?loc=help" />
+
+<apex:form>
+	<apex:pageMessages escape="true" id="errMsg"/>
+
+	<apex:pageBlock mode="maindetail" title="{!$ObjectType.Account.label}">
+		<apex:pageBlockButtons>
+			<apex:commandbutton value="Edit" action="{!edit}"/>			
+			<apex:commandbutton value="Delete" action="{!delete}" onclick="if(!confirm('Are you sure?')){return false};"/>
+		</apex:pageBlockButtons>
+
+		<apex:pageBlockSection title="A Title" showheader="false" collapsible="false" columns="2">
+			<apex:outputfield value="{!Account.Name}"/>
+			<apex:pageBlockSectionItem >
+				<apex:outputlabel value="Owner"/>
+					<apex:outputpanel >
+					<apex:outputfield value="{!Account.OwnerId}"/>&nbsp;&nbsp;<apex:outputLink value="/{!Account.Id}/a?retURL=%2F{!Account.Id}">[Change]</apex:outputLink>
+				</apex:outputpanel>
+			</apex:pageBlockSectionItem>			
+		</apex:pageBlockSection>
+
+		<apex:pageBlockSection title="System Information" showheader="false" collapsible="false" columns="2">
+	       <apex:pageBlockSectionItem>
+	            <apex:outputlabel value="Created By"/>
+	            <apex:outputPanel>
+	                <apex:outputLink value="/{!Account.CreatedBy.Id}"> {!Account.CreatedBy.Name}</apex:outputLink>,&nbsp;
+	                <apex:outputField value="{!Account.CreatedDate}" />
+	            </apex:outputPanel>
+	        </apex:pageBlockSectionItem>
+	        <apex:pageBlockSectionItem>
+	            <apex:outputlabel value="Last Modified By"/>
+	            <apex:outputPanel>
+	                <apex:outputLink value="/{!Account.LastModifiedBy.Id}"> {!Account.LastModifiedBy.Name}</apex:outputLink>,&nbsp;
+	                <apex:outputField value="{!Account.LastModifiedDate}" />
+	            </apex:outputPanel>
+	        </apex:pageBlockSectionItem>			
+		</apex:pageBlockSection>
+	</apex:pageblock>
+</apex:form>
+</apex:page>

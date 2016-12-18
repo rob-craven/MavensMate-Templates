@@ -450,6 +450,32 @@
             ]
         },
         {  
+            "name":"Visualforce Page Edit Rob",
+            "file_name":"ApexPage_Edit_Rob.page",
+            "description":"Visualforce Edit Page template",
+            "author":"@rob-craven",
+            "params":[  
+                {  
+                    "name":"api_name",
+                    "description":"Visualforce Page API Name",
+                    "default":"MyVisualforcePageName"
+                }
+            ]
+        },
+        {  
+            "name":"Visualforce Page View Rob",
+            "file_name":"ApexPage_View_Rob.page",
+            "description":"Basic Visualforce View Page template",
+            "author":"@rob-craven",
+            "params":[  
+                {  
+                    "name":"api_name",
+                    "description":"Visualforce Page API Name",
+                    "default":"MyVisualforcePageName"
+                }
+            ]
+        },                
+        {  
             "name":"Header and PageBlock",
             "file_name":"HeaderPageBlock.page",
             "description":"Visualforce Page with SectionHeader and PageBlock",
