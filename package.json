@@ -499,10 +499,12 @@
                 {  
                     "name":"api_name",
                     "description":"Apex Trigger API Name",
+                    "default":"SObjectName_Trigger"
                 },
                 {  
                     "name":"object_name",
                     "description":"Object API Name",
+                    "default":"Case"
                 }
             ]
         },        
