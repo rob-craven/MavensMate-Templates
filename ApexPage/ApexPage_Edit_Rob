@@ -4,17 +4,17 @@
 <apex:form>
 	<apex:pageMessages escape="true" id="errMsg"/>
 
-	<apex:pageBlock mode="edit" title="{!$ObjectType.Account.label} Edit">
+	<apex:pageblock mode="edit" title="{!$ObjectType.Account.label} Edit">
 
-		<apex:pageBlockButtons>
+		<apex:pageblockbuttons>
 			<apex:commandbutton value="Save" action="{!save}" />
 			<apex:commandbutton value="Cancel" action="{!cancel}" immediate="true" />			
-		</apex:pageBlockButtons>
+		</apex:pageblockbuttons>
 
-		<apex:pageBlockSection title="A Title" showheader="true" columns="2">
+		<apex:pageblocksection title="A Title" showheader="true" columns="2">
 			<apex:inputfield value="{!Account.Name}" required="true"/>
-		</apex:pageBlockSection>
+		</apex:pageblocksection>
 
-	</apex:pageBlock>
+	</apex:pageblock>
 </apex:form>
 </apex:page>
