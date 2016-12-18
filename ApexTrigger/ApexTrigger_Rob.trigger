@@ -1,7 +1,7 @@
 trigger {{ api_name }} on {{ object_name }} (before insert, before update, after insert, after update) {
 
 
-	//Before execution triggers
+    //Before execution triggers
     if(Trigger.isBefore)
     {
         if(Trigger.isInsert)
